@@ -1,6 +1,6 @@
 .odometer {
   background: black;
-  font-family: Times New Roman;
+  font-family: Montserrat, "Open Sans", sans-serif;
   border: 1px solid;
   -moz-border-radius:    10px;
   -webkit-border-radius: 10px;
@@ -68,6 +68,7 @@
   top:      -0.1em;
   left:        0px;
   font-size: 1.2em;
-  color:     #084a01;
+  color: #eee;
+  -webkit-text-fill-color: rgba( 256, 256, 256, 0.8 );
   width:     0.6em;
 }

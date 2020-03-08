@@ -151,8 +151,8 @@
           start_time: "required"
         },
         messages: {
-          attendees: "Must be a number greater than zero",
-          hourly_rate: "Must be a number greater than zero"
+          attendees: "Debe ser un número mayor que cero",
+          hourly_rate: "Debe ser un número mayor que cero"
         }
       });
     };
@@ -284,8 +284,6 @@
           return "euro";
         case 'ja':
           return "yen";
-        case 'sv':
-          return "Kr";
       }
     };
 

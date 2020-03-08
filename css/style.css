@@ -1,20 +1,18 @@
 body {
   margin-top: 5em;
-  background: #6E0911;
-  color:      #757890;
+  background: #E36369;
+  color:      #3B3B3B;
   text-align: center;
-
+  font-family: Montserrat, "Open Sans", sans-serif;
   font-size: 18px;
 }
 
 h1, h2, h3 {
   margin: 0; padding: 0;
   letter-spacing: -0.05em;
-  font-family: Georgia, "Times New Roman", Times, serif;
   font-weight: normal;
   color: white;
   text-align: center;
-  color:#757890;
 }
 
 h1 { font-size: 1.8em; }
@@ -29,16 +27,19 @@ p {
 
 .notes {
    text-align: left;
-   color: #F5DEB3;
+   color: rgba(59,59,59,0.6);
    font-size: 95%;
    font-weight: normal;
    width: 40%;
    margin: 0 auto 2em;
 }
+
+.notes p { font-size: 80%; }
+
 .small { font-size: 70%; }
 
 #display {
-  background: #470F14;
+  background: #3B3B3B;
   padding: 2em;
   margin:  2em;
   -moz-border-radius:    30px;
@@ -49,10 +50,10 @@ p {
   -moz-box-shadow:    5px 5px 5px rgba( 0, 0, 0, 0.5 );
 }
 
-#form a { color: #F5DEB3; }
+#form a { color: rgba(59,59,59,0.6); }
 
 form.setup {
-  background: #F5DEB3;
+  background: #3B3B3B;
   padding:    1em;
   margin:     2em auto;
   min-width: 14em;
@@ -66,13 +67,15 @@ form dt {
   clear: both;
   float: left;
   text-align: right;
-  width:  11em;
+  width:  12em;
   margin: 0;
   margin-left: 1.5em;
   padding-top: 0.1em;
+  color: #FFFFFF;
+  font-family: Montserrat, "Open Sans", sans-serif;
 }
 
-form dt p.small { font-size: 40%; }
+form dt p.small { font-size: 35%; }
 form dt, form dd { height: 1.5em; }
 
 form dd {
@@ -88,7 +91,11 @@ dd input {
   font-size: 1em;
 }
 
-.error { color: red; }
+input:matches([type="button"], [type="submit"], [type="reset"], button) {
+  font-size: 2em;
+}
+
+.error { color: #E36369; }
 label.error {
   display:     block;
   font-size:   0.5em;
