@@ -19,9 +19,10 @@ meeting-ticker/
 ├── index.html              # Main HTML entry point (Spanish/KENSO branded)
 ├── src/
 │   └── meeting-ticker.coffee   # PRIMARY SOURCE - CoffeeScript (edit this!)
+├── .ruby-version               # Ruby version specification (3.0.2)
 ├── js/
 │   ├── meeting-ticker.js       # Compiled output (auto-generated)
-│   ├── jquery-1.3.2.min.js     # jQuery framework
+│   ├── jquery-1.6.3.min.js     # jQuery framework
 │   ├── jquery-ui-1.7.2.core.min.js
 │   ├── jquery.clockpick.1.2.1.js
 │   ├── jquery.validate.min.js
@@ -144,14 +145,11 @@ start_time:  "required"
 ## Environment Setup
 
 ```bash
-# Ruby version (via RVM)
-rvm use 1.9.3
+# Ruby version (specified in .ruby-version)
+ruby -v  # Should be 3.0.2
 
 # Install dependencies
 bundle install
-
-# Import gem set
-rvm gemset import meeting-ticker.gems
 ```
 
 ## Important Notes
