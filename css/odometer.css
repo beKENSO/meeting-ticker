@@ -76,7 +76,8 @@
 .odometer .prefix {
   position: absolute;
   top:      -0.1em;
-  left:        12px;
+  right:       12px;
+  left:        auto;
   font-size: 1.2em;
   color: #FFFFFF;
   -webkit-text-fill-color: rgba( 255, 255, 255, 0.95 );
