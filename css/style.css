@@ -114,6 +114,18 @@ dd input:focus {
   border-color: #FF715E;
 }
 
+/* Watermark plugin placeholder text */
+span[wmwrap='true'] {
+  display: inline-block;
+}
+
+span[wmwrap='true'] label {
+  left: 0 !important;
+  right: 0 !important;
+  text-align: center;
+  width: 100%;
+}
+
 dd select {
   border: 1px solid #B5D3C8;
   border-radius: 6px;
