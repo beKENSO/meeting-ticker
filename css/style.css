@@ -103,9 +103,10 @@ dd input {
   font-size: 1em;
   border: 1px solid #B5D3C8;
   border-radius: 6px;
-  padding: 0.2em 0.4em;
+  padding: 0.2em 0.5em;
   transition: border-color 0.2s ease;
   vertical-align: middle;
+  text-align: left;
 }
 
 dd input:focus {
