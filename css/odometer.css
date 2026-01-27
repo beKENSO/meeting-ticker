@@ -1,28 +1,37 @@
 .odometer {
-  background: black;
+  background: #3B3B3B;
   font-family: Montserrat, "Open Sans", sans-serif;
-  border: 1px solid;
-  -moz-border-radius:    10px;
-  -webkit-border-radius: 10px;
+  border: none;
+  -moz-border-radius:    12px;
+  -webkit-border-radius: 12px;
+  border-radius: 12px;
 
-  margin: 19px 0; padding: 0;
+  margin: 19px auto; padding: 0;
 
   font-size: 8em;
   height:    148px;
-  text-shadow: -1px -1px 0 rgba( 0, 0, 0, 0.8 );
+  text-shadow: -1px -1px 0 rgba( 0, 0, 0, 0.3 );
 
   position: relative;
   overflow: hidden;
 
+  background: linear-gradient(
+    to bottom,
+    #3B3B3B 0%,
+    #4A4A4A 25%,
+    #666666 35%,
+    #4A4A4A 55%,
+    #3B3B3B 100%
+  );
   background: -webkit-gradient(
     linear,
     left top,
     left bottom,
-    from( #000 ),
-    to(   #000 ),
-    color-stop( 0.25, #333 ),
-    color-stop( 0.35, #aaa ),
-    color-stop( 0.55, #333 )
+    from( #3B3B3B ),
+    to(   #3B3B3B ),
+    color-stop( 0.25, #4A4A4A ),
+    color-stop( 0.35, #666 ),
+    color-stop( 0.55, #4A4A4A )
   );
 }
 
@@ -33,7 +42,7 @@
 .odometer ul.odometer_column {
   display:  block;
   position: absolute;
-  border-color: #272727;
+  border-color: #2A2A2A;
 
   width:     1em;
   height:   14em;
@@ -48,8 +57,8 @@
 }
 
 .odometer ul.active li {
-  color: #eee;
-  -webkit-text-fill-color: rgba( 256, 256, 256, 0.8 );
+  color: #FFFFFF;
+  -webkit-text-fill-color: rgba( 255, 255, 255, 0.95 );
 }
 
 .odometer ul.odometer_column li span {
@@ -68,7 +77,7 @@
   top:      -0.1em;
   left:        0px;
   font-size: 1.2em;
-  color: #eee;
-  -webkit-text-fill-color: rgba( 256, 256, 256, 0.8 );
+  color: #FFFFFF;
+  -webkit-text-fill-color: rgba( 255, 255, 255, 0.95 );
   width:     0.6em;
 }
