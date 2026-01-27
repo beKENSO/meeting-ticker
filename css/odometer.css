@@ -1,6 +1,6 @@
 .odometer {
-  background: #3B3B3B;
-  font-family: Montserrat, "Open Sans", sans-serif;
+  background: #222222;
+  font-family: "Libre Franklin", sans-serif;
   border: none;
   -moz-border-radius:    12px;
   -webkit-border-radius: 12px;
@@ -17,21 +17,21 @@
 
   background: linear-gradient(
     to bottom,
-    #3B3B3B 0%,
-    #4A4A4A 25%,
-    #666666 35%,
-    #4A4A4A 55%,
-    #3B3B3B 100%
+    #222222 0%,
+    #333333 25%,
+    #555555 35%,
+    #333333 55%,
+    #222222 100%
   );
   background: -webkit-gradient(
     linear,
     left top,
     left bottom,
-    from( #3B3B3B ),
-    to(   #3B3B3B ),
-    color-stop( 0.25, #4A4A4A ),
-    color-stop( 0.35, #666 ),
-    color-stop( 0.55, #4A4A4A )
+    from( #222222 ),
+    to(   #222222 ),
+    color-stop( 0.25, #333333 ),
+    color-stop( 0.35, #555555 ),
+    color-stop( 0.55, #333333 )
   );
 }
 
@@ -42,7 +42,7 @@
 .odometer ul.odometer_column {
   display:  block;
   position: absolute;
-  border-color: #2A2A2A;
+  border-color: #1a1a1a;
 
   width:     1em;
   height:   14em;

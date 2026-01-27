@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;500;600&display=swap');
+
 body {
   margin-top: 5em;
-  background: #F7F7F7;
-  color:      #3B3B3B;
+  background: #FEFBF8;
+  color:      #222222;
   text-align: center;
-  font-family: Montserrat, "Open Sans", sans-serif;
+  font-family: "Libre Franklin", sans-serif;
   font-size: 18px;
 }
 
@@ -11,7 +13,7 @@ h1, h2, h3 {
   margin: 0; padding: 0;
   letter-spacing: -0.05em;
   font-weight: 600;
-  color: #3B3B3B;
+  color: #222222;
   text-align: center;
 }
 
@@ -27,7 +29,7 @@ p {
 
 .notes {
    text-align: left;
-   color: rgba(59,59,59,0.6);
+   color: rgba(34,34,34,0.6);
    font-size: 95%;
    font-weight: normal;
    width: 40%;
@@ -47,13 +49,13 @@ p {
   -webkit-border-radius: 16px;
   border-radius: 16px;
 
-  -webkit-box-shadow: 0 4px 20px rgba(59, 59, 59, 0.1);
-  -moz-box-shadow:    0 4px 20px rgba(59, 59, 59, 0.1);
-  box-shadow:         0 4px 20px rgba(59, 59, 59, 0.1);
+  -webkit-box-shadow: 0 4px 20px rgba(34, 34, 34, 0.08);
+  -moz-box-shadow:    0 4px 20px rgba(34, 34, 34, 0.08);
+  box-shadow:         0 4px 20px rgba(34, 34, 34, 0.08);
 }
 
-#form a { color: #00897B; }
-#form a:hover { color: #00695C; }
+#form a { color: #FF715E; }
+#form a:hover { color: #E5614F; }
 
 form.setup {
   background: #FFFFFF;
@@ -65,9 +67,9 @@ form.setup {
   -moz-border-radius:    16px;
   -webkit-border-radius: 16px;
   border-radius: 16px;
-  -webkit-box-shadow: 0 4px 20px rgba(59, 59, 59, 0.1);
-  -moz-box-shadow:    0 4px 20px rgba(59, 59, 59, 0.1);
-  box-shadow:         0 4px 20px rgba(59, 59, 59, 0.1);
+  -webkit-box-shadow: 0 4px 20px rgba(34, 34, 34, 0.08);
+  -moz-box-shadow:    0 4px 20px rgba(34, 34, 34, 0.08);
+  box-shadow:         0 4px 20px rgba(34, 34, 34, 0.08);
 }
 
 form dt {
@@ -78,8 +80,8 @@ form dt {
   margin: 0;
   margin-left: 1.5em;
   padding-top: 0.1em;
-  color: #3B3B3B;
-  font-family: Montserrat, "Open Sans", sans-serif;
+  color: #222222;
+  font-family: "Libre Franklin", sans-serif;
   font-weight: 500;
 }
 
@@ -97,7 +99,7 @@ dd input {
   margin: 0;
   width:     7em;
   font-size: 1em;
-  border: 1px solid #DDD;
+  border: 1px solid #B5D3C8;
   border-radius: 6px;
   padding: 0.2em 0.4em;
   transition: border-color 0.2s ease;
@@ -105,11 +107,11 @@ dd input {
 
 dd input:focus {
   outline: none;
-  border-color: #00897B;
+  border-color: #FF715E;
 }
 
 dd select {
-  border: 1px solid #DDD;
+  border: 1px solid #B5D3C8;
   border-radius: 6px;
   padding: 0.2em 0.4em;
   font-size: 1em;
@@ -118,26 +120,26 @@ dd select {
 
 input[type="submit"] {
   font-size: 1.8em;
-  background: #3B3B3B;
+  background: #FF715E;
   color: #FFFFFF;
   border: none;
   padding: 0.4em 1.2em;
   border-radius: 8px;
   cursor: pointer;
-  font-family: Montserrat, "Open Sans", sans-serif;
+  font-family: "Libre Franklin", sans-serif;
   font-weight: 500;
   transition: background-color 0.2s ease, transform 0.1s ease;
 }
 
 input[type="submit"]:hover {
-  background: #2A2A2A;
+  background: #E5614F;
 }
 
 input[type="submit"]:active {
   transform: scale(0.98);
 }
 
-.error { color: #D32F2F; }
+.error { color: #FF715E; }
 label.error {
   display:     block;
   font-size:   0.5em;
@@ -145,9 +147,9 @@ label.error {
 
 form.stop input[type="submit"] {
   font-size: 1.8em;
-  background: #00897B;
+  background: #222222;
 }
 
 form.stop input[type="submit"]:hover {
-  background: #00695C;
+  background: #333333;
 }
