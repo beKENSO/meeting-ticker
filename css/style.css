@@ -93,6 +93,7 @@ form dd {
   margin-left:   15em;
   margin-bottom:  1em;
   width:          37%;
+  white-space: nowrap;
 }
 
 dd input {
@@ -103,6 +104,7 @@ dd input {
   border-radius: 6px;
   padding: 0.2em 0.4em;
   transition: border-color 0.2s ease;
+  vertical-align: middle;
 }
 
 dd input:focus {
@@ -116,14 +118,20 @@ dd select {
   padding: 0.2em 0.4em;
   font-size: 1em;
   background: #FFF;
+  vertical-align: middle;
+  margin-right: 0.3em;
+}
+
+dd select + input {
+  width: 5.5em;
 }
 
 input[type="submit"] {
-  font-size: 1.8em;
+  font-size: 1em;
   background: #FF715E;
   color: #FFFFFF;
   border: none;
-  padding: 0.4em 1.2em;
+  padding: 0.5em 1.5em;
   border-radius: 8px;
   cursor: pointer;
   font-family: "Libre Franklin", sans-serif;
@@ -146,7 +154,7 @@ label.error {
 }
 
 form.stop input[type="submit"] {
-  font-size: 1.8em;
+  font-size: 1em;
   background: #222222;
 }
 
