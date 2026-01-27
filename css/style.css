@@ -119,11 +119,7 @@ dd select {
   font-size: 1em;
   background: #FFF;
   vertical-align: middle;
-  margin-right: 0.3em;
-}
-
-dd select + input {
-  width: 5.5em;
+  margin-left: 0.3em;
 }
 
 input[type="submit"] {
