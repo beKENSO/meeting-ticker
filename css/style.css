@@ -98,6 +98,7 @@ form dd {
 
 dd input {
   margin: 0;
+  margin-left: 0.5em;
   width:     7em;
   font-size: 1em;
   border: 1px solid #B5D3C8;
