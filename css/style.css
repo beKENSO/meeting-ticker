@@ -89,7 +89,7 @@ form dt p.small { font-size: 35%; }
 form dt, form dd { height: 1.5em; }
 
 form dd {
-  text-align:   right;
+  text-align:   left;
   margin-left:   15em;
   margin-bottom:  1em;
   width:          37%;
