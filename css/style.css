@@ -106,7 +106,7 @@ dd input {
   padding: 0.2em 0.5em;
   transition: border-color 0.2s ease;
   vertical-align: middle;
-  text-align: left;
+  text-align: center;
 }
 
 dd input:focus {
