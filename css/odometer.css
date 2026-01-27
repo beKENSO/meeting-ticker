@@ -7,6 +7,7 @@
   border-radius: 12px;
 
   margin: 19px auto; padding: 0;
+  width: 520px;
 
   font-size: 8em;
   height:    148px;
@@ -75,7 +76,7 @@
 .odometer .prefix {
   position: absolute;
   top:      -0.1em;
-  left:        0px;
+  left:        12px;
   font-size: 1.2em;
   color: #FFFFFF;
   -webkit-text-fill-color: rgba( 255, 255, 255, 0.95 );

@@ -165,9 +165,9 @@ label.error {
 
 form.stop input[type="submit"] {
   font-size: 1em;
-  background: #222222;
+  background: #FF715E;
 }
 
 form.stop input[type="submit"]:hover {
-  background: #333333;
+  background: #E5614F;
 }
