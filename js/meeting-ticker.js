@@ -27,7 +27,7 @@
       this.startTime(this._formElement("start_time").val());
       this.display.show();
       this.form.parent().hide();
-      $("#started_at").text("(we began at " + (this.startTime().toString()) + ")");
+      $("#started_at").text("(comenzamos a las " + (this.startTime().toString()) + ")");
       this.odometerElement.odometer({
         prefix: this.currencyLabel()
       });

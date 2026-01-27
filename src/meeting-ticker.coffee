@@ -25,7 +25,7 @@ class MeetingTicker
 
     @display.show()
     @form.parent().hide()
-    $("#started_at").text "(we began at #{this.startTime().toString()})"
+    $("#started_at").text "(comenzamos a las #{this.startTime().toString()})"
     @odometerElement.odometer({ prefix: this.currencyLabel() })
 
     @timer = setInterval(
