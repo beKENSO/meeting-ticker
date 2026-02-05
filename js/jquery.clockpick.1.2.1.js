@@ -156,18 +156,17 @@ jQuery.fn.clockpick = function(options, callback) {
 		}
 		
 		function putcontainer() {
-			if (!jQuery.browser.safari) {
-				$hourcont
-				.css("left",e.pageX - 5)
-				.css("top",e.pageY - (Math.floor($hourcont.height() / 2)));
-				rectify($hourcont);
-			}
-			else 
-				jQuery(self).after($hourcont);
+			// Position relative to the input element
+			var $input = jQuery(self);
+			var offset = $input.offset();
+			$hourcont
+				.css("left", offset.left + $input.outerWidth() + 10)
+				.css("top", offset.top);
+			rectify($hourcont);
 			$hourcont.show();
-			
+
 			if ( settings.useBgiframe )
-				bgi( $hourcont );			
+				bgi( $hourcont );
 		}
 		
 		function rectify($obj) { 
