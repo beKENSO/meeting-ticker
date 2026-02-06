@@ -47,9 +47,10 @@
       // Change button text to "Reiniciar" and bind click to refresh
       $stopButton = $("form.stop input[type='submit']");
       $stopButton.val("Reiniciar");
-      return $("form.stop").off("submit").on("submit", function(event) {
+      $("form.stop").off("submit");
+      $stopButton.off("click").on("click", function(event) {
         event.preventDefault();
-        return location.reload();
+        location.reload();
       });
     };
 

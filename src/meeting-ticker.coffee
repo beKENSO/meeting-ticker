@@ -44,7 +44,8 @@ class MeetingTicker
     # Change button text to "Reiniciar" and bind click to refresh
     $stopButton = $("form.stop input[type='submit']")
     $stopButton.val("Reiniciar")
-    $("form.stop").off("submit").on "submit", (event) ->
+    $("form.stop").off("submit")
+    $stopButton.off("click").on "click", (event) ->
       event.preventDefault()
       location.reload()
 
