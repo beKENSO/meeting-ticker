@@ -40,18 +40,11 @@
     };
 
     MeetingTicker.prototype.stop = function() {
-      var $stopButton;
       console.log("Stopped...");
       clearInterval(this.timer);
       this.timer = null;
-      // Change button text to "Reiniciar" and bind click to refresh
-      $stopButton = $("form.stop input[type='submit']");
-      $stopButton.val("Reiniciar");
-      $("form.stop").off("submit");
-      $stopButton.off("click").on("click", function(event) {
-        event.preventDefault();
-        location.reload();
-      });
+      // Hide the stop button
+      $("form.stop").hide();
     };
 
     MeetingTicker.prototype.isRunning = function() {
