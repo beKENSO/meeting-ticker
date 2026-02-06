@@ -1,17 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;500;600&display=swap');
+
 body {
   margin-top: 5em;
-  background: #E36369;
-  color:      #3B3B3B;
+  background: #FEFBF8;
+  color:      #222222;
   text-align: center;
-  font-family: Montserrat, "Open Sans", sans-serif;
+  font-family: "Libre Franklin", sans-serif;
   font-size: 18px;
 }
 
 h1, h2, h3 {
   margin: 0; padding: 0;
   letter-spacing: -0.05em;
-  font-weight: normal;
-  color: white;
+  font-weight: 600;
+  color: #222222;
   text-align: center;
 }
 
@@ -27,7 +29,7 @@ p {
 
 .notes {
    text-align: left;
-   color: rgba(59,59,59,0.6);
+   color: rgba(34,34,34,0.6);
    font-size: 95%;
    font-weight: normal;
    width: 40%;
@@ -36,31 +38,38 @@ p {
 
 .notes p { font-size: 80%; }
 
-.small { font-size: 70%; }
+.small { font-size: 70%; color: #666; }
 
 #display {
-  background: #3B3B3B;
+  background: #FFFFFF;
   padding: 2em;
-  margin:  2em;
-  -moz-border-radius:    30px;
-  -webkit-border-radius: 30px;
-  border-radius: 30px;
+  margin:  2em auto;
+  max-width: 750px;
+  -moz-border-radius:    16px;
+  -webkit-border-radius: 16px;
+  border-radius: 16px;
 
-  -webkit-box-shadow: 5px 5px 5px rgba( 0, 0, 0, 0.5 );
-  -moz-box-shadow:    5px 5px 5px rgba( 0, 0, 0, 0.5 );
+  -webkit-box-shadow: 0 4px 20px rgba(34, 34, 34, 0.08);
+  -moz-box-shadow:    0 4px 20px rgba(34, 34, 34, 0.08);
+  box-shadow:         0 4px 20px rgba(34, 34, 34, 0.08);
 }
 
-#form a { color: rgba(59,59,59,0.6); }
+#form a { color: #FF715E; }
+#form a:hover { color: #E5614F; }
 
 form.setup {
-  background: #3B3B3B;
-  padding:    1em;
+  background: #FFFFFF;
+  padding:    1.5em 1em;
   margin:     2em auto;
   min-width: 14em;
   max-width: 28em;
   font-size:  2em;
-  -moz-border-radius:    20px;
-  -webkit-border-radius: 20px;
+  -moz-border-radius:    16px;
+  -webkit-border-radius: 16px;
+  border-radius: 16px;
+  -webkit-box-shadow: 0 4px 20px rgba(34, 34, 34, 0.08);
+  -moz-box-shadow:    0 4px 20px rgba(34, 34, 34, 0.08);
+  box-shadow:         0 4px 20px rgba(34, 34, 34, 0.08);
 }
 
 form dt {
@@ -71,36 +80,94 @@ form dt {
   margin: 0;
   margin-left: 1.5em;
   padding-top: 0.1em;
-  color: #FFFFFF;
-  font-family: Montserrat, "Open Sans", sans-serif;
+  color: #222222;
+  font-family: "Libre Franklin", sans-serif;
+  font-weight: 500;
 }
 
 form dt p.small { font-size: 35%; }
 form dt, form dd { height: 1.5em; }
 
 form dd {
-  text-align:   right;
+  text-align:   left;
   margin-left:   15em;
   margin-bottom:  1em;
   width:          37%;
+  white-space: nowrap;
 }
 
 dd input {
   margin: 0;
+  margin-left: 0.5em;
   width:     7em;
   font-size: 1em;
+  border: 1px solid #B5D3C8;
+  border-radius: 6px;
+  padding: 0.2em 0.5em;
+  transition: border-color 0.2s ease;
+  vertical-align: middle;
+  text-align: center;
 }
 
-input:matches([type="button"], [type="submit"], [type="reset"], button) {
-  font-size: 2em;
+dd input:focus {
+  outline: none;
+  border-color: #FF715E;
 }
 
-.error { color: #E36369; }
+/* Watermark plugin placeholder text */
+span[wmwrap='true'] {
+  display: inline-block;
+}
+
+span[wmwrap='true'] label {
+  left: 0 !important;
+  right: 0 !important;
+  text-align: center;
+  width: 100%;
+}
+
+dd select {
+  border: 1px solid #B5D3C8;
+  border-radius: 6px;
+  padding: 0.2em 0.4em;
+  font-size: 1em;
+  background: #FFF;
+  vertical-align: middle;
+  margin-left: 0.3em;
+}
+
+input[type="submit"] {
+  font-size: 1em;
+  background: #FF715E;
+  color: #FFFFFF;
+  border: none;
+  padding: 0.5em 1.5em;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: "Libre Franklin", sans-serif;
+  font-weight: 500;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+input[type="submit"]:hover {
+  background: #E5614F;
+}
+
+input[type="submit"]:active {
+  transform: scale(0.98);
+}
+
+.error { color: #FF715E; }
 label.error {
   display:     block;
   font-size:   0.5em;
 }
 
-form.stop input {
-   font-size: 2em;
+form.stop input[type="submit"] {
+  font-size: 1em;
+  background: #FF715E;
+}
+
+form.stop input[type="submit"]:hover {
+  background: #E5614F;
 }

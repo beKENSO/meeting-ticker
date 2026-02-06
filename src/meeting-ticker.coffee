@@ -21,11 +21,15 @@ class MeetingTicker
   start: ->
     return unless this.valid()
 
+    # Close the time picker if open
+    $("#CP_hourcont").remove()
+    $("#CP_minutecont").remove()
+
     this.startTime( this._formElement( "start_time" ).val() )
 
     @display.show()
     @form.parent().hide()
-    $("#started_at").text "(we began at #{this.startTime().toString()})"
+    $("#started_at").text "(comenzamos a las #{this.startTime().toString()})"
     @odometerElement.odometer({ prefix: this.currencyLabel() })
 
     @timer = setInterval(
@@ -37,6 +41,8 @@ class MeetingTicker
     console.log("Stopped...")
     clearInterval @timer
     @timer = null
+    # Hide the stop button
+    $("form.stop").hide()
 
   isRunning: -> @timer?
 

@@ -24,10 +24,13 @@
     MeetingTicker.prototype.start = function() {
       var _this = this;
       if (!this.valid()) return;
+      // Close the time picker if open
+      $("#CP_hourcont").remove();
+      $("#CP_minutecont").remove();
       this.startTime(this._formElement("start_time").val());
       this.display.show();
       this.form.parent().hide();
-      $("#started_at").text("(we began at " + (this.startTime().toString()) + ")");
+      $("#started_at").text("(comenzamos a las " + (this.startTime().toString()) + ")");
       this.odometerElement.odometer({
         prefix: this.currencyLabel()
       });
@@ -39,7 +42,9 @@
     MeetingTicker.prototype.stop = function() {
       console.log("Stopped...");
       clearInterval(this.timer);
-      return this.timer = null;
+      this.timer = null;
+      // Hide the stop button
+      $("form.stop").hide();
     };
 
     MeetingTicker.prototype.isRunning = function() {
