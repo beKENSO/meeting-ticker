@@ -24,6 +24,9 @@
     MeetingTicker.prototype.start = function() {
       var _this = this;
       if (!this.valid()) return;
+      // Close the time picker if open
+      $("#CP_hourcont").remove();
+      $("#CP_minutecont").remove();
       this.startTime(this._formElement("start_time").val());
       this.display.show();
       this.form.parent().hide();
@@ -37,9 +40,17 @@
     };
 
     MeetingTicker.prototype.stop = function() {
+      var $stopButton;
       console.log("Stopped...");
       clearInterval(this.timer);
-      return this.timer = null;
+      this.timer = null;
+      // Change button text to "Reiniciar" and bind click to refresh
+      $stopButton = $("form.stop input[type='submit']");
+      $stopButton.val("Reiniciar");
+      return $("form.stop").off("submit").on("submit", function(event) {
+        event.preventDefault();
+        return location.reload();
+      });
     };
 
     MeetingTicker.prototype.isRunning = function() {

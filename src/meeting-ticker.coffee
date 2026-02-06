@@ -21,6 +21,10 @@ class MeetingTicker
   start: ->
     return unless this.valid()
 
+    # Close the time picker if open
+    $("#CP_hourcont").remove()
+    $("#CP_minutecont").remove()
+
     this.startTime( this._formElement( "start_time" ).val() )
 
     @display.show()
@@ -37,6 +41,12 @@ class MeetingTicker
     console.log("Stopped...")
     clearInterval @timer
     @timer = null
+    # Change button text to "Reiniciar" and bind click to refresh
+    $stopButton = $("form.stop input[type='submit']")
+    $stopButton.val("Reiniciar")
+    $("form.stop").off("submit").on "submit", (event) ->
+      event.preventDefault()
+      location.reload()
 
   isRunning: -> @timer?
 
